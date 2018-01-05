@@ -175,6 +175,8 @@ Python(自带的库是支持Tk的Tkinter)支持多种图形界面的第三方库
     wxWidgets
     Qt
     GTK
+Socket:
+    so easy 
 ```
 
 ###### 数据库存储
