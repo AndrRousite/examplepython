@@ -70,6 +70,33 @@ set: 无序和无重复元素的集合，set和dict类似，也是一组key的�
     一个.py文件就是一个模块
     安装第三方模块：
         pip：包管理器
+        常用的第三方模块：
+            Pillow:图形处理
+            requests:http请求
+            chardet:字符编码
+            psutil:获取系统信息
+    常用内建模块：
+        datetime：
+            datetime表示的时间需要时区信息才能确定一个特定的时间，否则只能视为本地时间。
+            如果要存储datetime，最佳方法是将其转换为timestamp再存储，因为timestamp的值与时区完全无关。
+        collections:
+            Python内建的一个集合模块，提供了许多有用的集合类。
+        base64:
+            一种任意二进制到文本字符串的编码方法，常用于在URL、Cookie、网页中传输少量二进制数据。
+        hashlib:
+            提供了常见的摘要算法，如MD5，SHA1等等。
+        hmac:
+            hmac和普通hash算法非常类似。hmac输出的长度和原始哈希算法的长度一致。需要注意传入的key和message都是bytes类型，str类型需要首先编码为bytes。
+        itertools:
+            提供了非常有用的用于操作迭代对象的函数
+        urllib:
+             一系列用于操作URL的功能。   
+        json:
+        xml:
+        HTMLParser:
+            HTML本质上是XML的子集，但是HTML的语法没有XML那么严格，所以不能用标准的DOM或SAX来解析HTML。
+            Python提供了HTMLParser来非常方便地解析HTML
+            
 ```
 
 ###### 面向对象编程
@@ -136,17 +163,38 @@ StringIO和BytesIO
 目录和文件操作：os模块和os.path模块
 
 序列化：程序运行的过程中，所有的变量都是在内存中，把变量从内存中变成可存储或传输的过程称之为序列化
+
+JSON: 
+
 ```
 
-###### CGI和网络编程
+###### CGI(鸡肋)和网络编程
+```angular2html
+Python(自带的库是支持Tk的Tkinter)支持多种图形界面的第三方库，包括：
+    Tk
+    wxWidgets
+    Qt
+    GTK
+```
 
 ###### 数据库存储
 
-###### 多线程
+###### 多进程和多线程
+```angular2html
+多进程:
+    在Unix/Linux下，可以使用fork()调用实现多进程。
+    要实现跨平台的多进程，可以使用multiprocessing模块。
+    进程间通信是通过Queue、Pipes等实现的。
+多线程：
+    多线程编程，模型复杂，容易发生冲突，必须用锁加以隔离，同时，又要小心死锁的发生。
+    Python解释器由于设计时有GIL全局锁，导致了多线程无法利用多核。多线程的并发在Python中就是一个美丽的梦。
+```
 
 ###### GUI编程
 
 ###### JSON和XML解析以及正则处理
+    json:
+    xml:
 
 ###### Python3.x和2.x版本区别
 

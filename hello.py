@@ -1,3 +1,4 @@
+import json
 import math
 from enum import Enum
 from functools import reduce
@@ -251,6 +252,12 @@ finally:
     print('继续...')
     pass
 d = dict(name='liu-feng', age=20, score=88)
-f = open("./liufeng/dump.txt", 'wb')
-pickle.dump(d, f)
-f.close()
+# f = open("./liufeng/dump.txt", 'wb')
+# pickle.dump(d, f)
+# f.close()
+
+print(json.dumps(d))
+
+json_str = '{"age": 20, "score": 88, "name": "Bob"}'
+
+print(dict(json.loads(json_str)))
