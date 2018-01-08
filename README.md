@@ -168,18 +168,38 @@ JSON:
 
 ```
 
-###### CGI(鸡肋)和网络编程
+###### CGI和网络编程
 ```angular2html
-Python(自带的库是支持Tk的Tkinter)支持多种图形界面的第三方库，包括：
-    Tk
-    wxWidgets
-    Qt
-    GTK
 Socket:
     so easy 
+    TCP 协议：s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    UDP 协议：s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+STMP: 发送邮件
+POP3: 收取邮件   
 ```
 
 ###### 数据库存储
+```angular2html
+ORM 
+```
+
+###### Web开发
+```angular2html
+HTTP协议：
+HTML：
+WSGI接口：
+WEB框架：
+    Flask:
+    Django：全能型Web框架；
+    web.py：一个小巧的Web框架；
+    Bottle：和Flask类似的Web框架；
+    Tornado：Facebook的开源异步Web框架。
+模板引擎：
+    Jinja2:
+    Mako：用<% ... %>和${xxx}的一个模板；
+    Cheetah：也是用<% ... %>和${xxx}的一个模板；
+    Django：Django是一站式框架，内置一个用{% ... %}和{{ xxx }}的模板。
+```
 
 ###### 多进程和多线程
 ```angular2html
@@ -192,7 +212,19 @@ Socket:
     Python解释器由于设计时有GIL全局锁，导致了多线程无法利用多核。多线程的并发在Python中就是一个美丽的梦。
 ```
 
-###### GUI编程
+###### GUI编程(鸡肋)
+```angular2html
+Python(自带的库是支持Tk的Tkinter)支持多种图形界面的第三方库，包括：
+    Tk
+    wxWidgets
+    Qt
+    GTK
+```
+
+###### 异步IO
+```chameleon
+
+```
 
 ###### JSON和XML解析以及正则处理
     json:
