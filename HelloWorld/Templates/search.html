@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<form action="/search" method="get">
+    <input type="text" name="q"><input type="submit" value="搜索">
+</form>
+<ol>
+    {%for v in arr%}
+    <li>{{ v.name}}</li>
+    {%endfor%}
+</ol>
+</body>
+</html>
